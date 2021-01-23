@@ -1,10 +1,11 @@
 # Platformer_Project
 
-note: if the thing is completed put a "-DONE!" at the end.
+note:
+if the thing is completed put a "-DONE!" at the end.
 example:
 1. Player - Robot -DONE!
 
-#CHARACTERS:
+# CHARACTERS:
 1. Player - Robot
 2. Enemies - Robot (shadow version of the player) 
 
