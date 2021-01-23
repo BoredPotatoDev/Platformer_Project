@@ -20,28 +20,28 @@ example:
 - Theme: all white
 - here is where you show all the mechanics
 - Choice: Take the chip
-    if not
-      continue the game dont remove anything
-    if yes
-      remove unli respawn
+    * if not
+      * continue the game dont remove anything
+    * if yes
+      * remove unli respawn
       
 # LEVEL 2 ANGER 
 - Theme: red
 - Objective: kill all the enemies
 - Choice: Take the chip
-      if not 
-        continue the game dont remove anything
-      if yes
-        remove kill enemies
+      * if not 
+        * continue the game dont remove anything
+      * if yes
+        * remove kill enemies
  
 # LEVEL 3 BARGAINING
 - Theme: green
 - Objective: pass the level
 - Choice: Take the chip
-       - if not
-         - continue the game dont remove anything
-       - if yes
-         - remove double jump
+       * if not
+         * continue the game dont remove anything
+       * if yes
+         * remove double jump
          
 # LEVEL 4 DEPRESSION
 - Theme: blue
