@@ -29,18 +29,18 @@ example:
 - Theme: red
 - Objective: kill all the enemies
 - Choice: Take the chip
-      * if not 
+     * if not 
         * continue the game dont remove anything
-      * if yes
+     * if yes
         * remove kill enemies
  
 # LEVEL 3 BARGAINING
 - Theme: green
 - Objective: pass the level
 - Choice: Take the chip
-       * if not
-         * continue the game dont remove anything
-       * if yes
+     * if not
+        * continue the game dont remove anything
+     * if yes
          * remove double jump
          
 # LEVEL 4 DEPRESSION
@@ -50,20 +50,20 @@ example:
 - Touch the water = death
 - Once objective is complete you can go to the next stage
 - Choice: Take the chip
-        if not 
-          continue the game dont remove anything
-        if yes
-          make the player slower
+     * if not 
+          * continue the game dont remove anything
+     * if yes
+          * make the player slower
           
 # LEVEL 5 ACCEPTANCE
 - Theme: yellow
 - Objective: go through the stage
 - Longest stage and must go through the previous levels
 - Choice: Door or Jump the cliff
-        if Door
-           present a congratulation screen ("but did you complete it?")
-        if Cliff
-           Proceed to level 5.5 
+     * if Door
+          * present a congratulation screen ("but did you complete it?")
+     * if Cliff
+          * Proceed to level 5.5 
 
 # LEVEL 5.5 TRUE ENDING
 - achievable only when every chip is collected
