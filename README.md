@@ -46,6 +46,8 @@ example:
 # LEVEL 4 DEPRESSION
 - Theme: blue
 - Objectiive: Get to the top and pull the level or take the chip
+- water level is rising 
+- touch the water = death
 - Once objective is complete you can go to the next stage
 - Choice: Take the chip
         if not 
