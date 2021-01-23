@@ -38,10 +38,10 @@ example:
 - Theme: green
 - Objective: pass the level
 - Choice: Take the chip
-       if not
-         continue the game dont remove anything
-       if yes
-         remove double jump
+       - if not
+         - continue the game dont remove anything
+       - if yes
+         - remove double jump
          
 # LEVEL 4 DEPRESSION
 - Theme: blue
