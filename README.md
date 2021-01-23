@@ -65,5 +65,6 @@ example:
 
 "What you are experiencing is normal. Denial of what has happened. The Anger that you lashed out on others. The time you Bargained for everything to comeback. The time you lock yourself from the world because you were Depressed. But learn to accept the reality we will still be here waiting for you the emotions may still linger but never forget that there are people here waiting to help you. You are not alone."
 
-#TRUE ENDING
+# TRUE ENDING
+- achievable only when every chip is collected
 - after getting the true ending let the player roam around the levels and let them leave when ever they want.
