@@ -6,13 +6,13 @@ example:
 1. Player - Robot -DONE!
 
 # CHARACTERS:
-1. Player - Robot
-2. Enemies - Robot (shadow version of the player) 
+1. Player - Robot - DONE!
+2. Enemies - Robot (shadow version of the player) - DONE!
 
 # MAIN MECHANICS:
 1. Double Jump
 2. Kill Enemies
-3. Unli Respawn
+3. Unli Respawn -DONE!
 4. Side Scrolling 
 5. Removing of Mechanics one by one after obtaining chips
 
