@@ -9,73 +9,47 @@ example:
 1. Player - Robot - DONE!
 2. Enemies - Robot (shadow version of the player) - DONE!
 
-# MAIN MECHANICS:
-1. Double Jump
-2. Kill Enemies
-3. Unli Respawn -DONE!
-4. Side Scrolling 
-5. Removing of Mechanics one by one after obtaining chips
-
 # LEVEL 1 DENIAL (TUTORIAL)
 - Theme: all white
-- here is where you show all the mechanics
-- Choice: Take the chip
-    * if not
-      * continue the game dont remove anything
-    * if yes
-      * remove unli respawn
       
 # LEVEL 2 ANGER 
 - Theme: red
-- Objective: kill all the enemies
-- Choice: Take the chip
-     * if not 
-        * continue the game dont remove anything
-     * if yes
-        * remove kill enemies
- 
+
 # LEVEL 3 BARGAINING
 - Theme: green
-- Objective: pass the level
-- Choice: Take the chip
-     * if not
-        * continue the game dont remove anything
-     * if yes
-         * remove double jump
          
 # LEVEL 4 DEPRESSION
 - Theme: blue
-- Objectiive: Get to the top and pull the level or take the chip
-- Water level is rising 
-- Touch the water = death
-- Once objective is complete you can go to the next stage
-- Choice: Take the chip
-     * if not 
-          * continue the game dont remove anything
-     * if yes
-          * make the player slower
           
 # LEVEL 5 ACCEPTANCE
 - Theme: yellow
-- Objective: go through the stage
-- Longest stage and must go through the previous levels
-- Choice: Door or Jump the cliff
-     * if Door
-          * present a congratulation screen ("but did you complete it?")
-     * if Cliff
-          * Proceed to level 5.5 
-
-# LEVEL 5.5 TRUE ENDING
-- achievable only when every chip is collected
-- It is a long level where the player will see these phrases: 
+- Quote after exit: 
 - What you are experiencing is normal.
-- Denial of what has happened. 
-- The Anger that you lashed out on others. 
-- The time you Bargained for everything to comeback. 
-- When you drowned in all your sorrows. 
-- But learn to accept the reality. We will still be here waiting for you. The emotions may still linger but never forget that there are people here waiting to help you. 
 
-- At the end there will be a door 
-- After entering the door show the last message:
+note: 
+Levels 5.1 to 5.4 the starting point of the player is where they exited last time
+
+# LEVEL 5.1 Denial
+- Quote in Background: 
+- Denial of what has happened. 
+
+# Level 5.2 Anger
+- Quote in Background: 
+- The Anger that you lashed out on others. 
+
+# Level 5.3 Bargaining
+- Quote in Background: 
+- The time you Bargained for everything to comeback. 
+
+# Level 5.4 Depression
+- Quote in Background:
+- When you drowned in all your sorrows. 
+
+# Level 6 Ending
+- Empty level with only 1 exit
+- Quote in Background:
+- But learn to accept the reality. We will still be here waiting for you. The emotions may still linger but never forget that there are people here waiting to help you. 
+- Quote after exit: 
 - You are not alone.
+
 
