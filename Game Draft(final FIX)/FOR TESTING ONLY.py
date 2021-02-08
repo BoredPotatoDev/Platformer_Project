@@ -87,7 +87,7 @@ chip_fx = pygame.mixer.Sound('img/sound/chipsound.wav')
 chip_fx.set_volume(0.5)
 
 jump_fx = pygame.mixer.Sound('img/sound/jump.wav')
-jump_fx.set_volume(0.5)
+jump_fx.set_volume(0.25)
 
 death_fx = pygame.mixer.Sound('img/sound/death.wav')
 death_fx.set_volume(0.3)
@@ -831,10 +831,6 @@ while run:
                 fadefirst(width, height)
             if start_button.draw() or key[pygame.K_RETURN]:
                 main_menu = False
-                level = 0
-                world_data = []
-                world = reset_level(level)
-                game_over = 0
 
         else:
             world.draw()
@@ -1006,12 +1002,14 @@ while run:
 
         key = pygame.key.get_pressed()
         if key[pygame.K_ESCAPE]:
+            level += 1
             fadefirst(width, height)
             world_data = []
             world = reset_level(level)
             game_over = 0
             total_chip = total_chip - chip
             chip = 0
+
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
