@@ -341,13 +341,48 @@ class World():
     def __init__(self, data):
         self.tile_list = []
 
-
-
         #Copy paste this for bg per level
         #if level == 0:
         #    pygame.mixer.music.load('img/sound/level0.mp3')
         #    pygame.mixer.music.play(1)
 
+        #Backgroud Music
+        if level == 1:
+            pygame.mixer.music.load('img/sound/BG_Denial.mp3')
+            pygame.mixer.music.play(1)
+            
+        if level == 2:
+            pygame.mixer.music.load('img/sound/BG_Anger.mp3')
+            pygame.mixer.music.play(1)
+            
+        if level == 3:
+            pygame.mixer.music.load('img/sound/BG_Bargaining.mp3')
+            pygame.mixer.music.play(1)
+            
+        if level == 4:
+            pygame.mixer.music.load('img/sound/BG_Depression.mp3')
+            pygame.mixer.music.play(1)
+        
+        if level == 5:
+            pygame.mixer.music.load('img/sound/BG_Acceptance.mp3')
+            pygame.mixer.music.play(1)
+            
+        if level == 6:
+            pygame.mixer.music.load('img/sound/BG_Denial.mp3')
+            pygame.mixer.music.play(1)
+            
+        if level == 7:
+            pygame.mixer.music.load('img/sound/BG_Anger.mp3')
+            pygame.mixer.music.play(1)
+        
+        if level == 8:
+            pygame.mixer.music.load('img/sound/BG_Bargaining.mp3')
+            pygame.mixer.music.play(1)
+            
+        if level == 9:
+            pygame.mixer.music.load('img/sound/BG_Depression.mp3')
+            pygame.mixer.music.play(1)
+            
         #load images for blocks
         #stage 0 tile number = 1 and 2
         tutorial1_block = pygame.image.load('img/blocks/tutorial1.jpg')
