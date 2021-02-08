@@ -193,6 +193,7 @@ class Player():
         self.reset(x, y)
 
     def update(self, game_over):
+            cooldown = 550
             dx = 0
             dy = 0
             walk_cooldown = 3
@@ -222,6 +223,21 @@ class Player():
                         self.image = self.images_right[self.index]
                     if self.direction == -1:
                         self.image = self.images_left[self.index]
+
+                # record current time
+                time_now = pygame.time.get_ticks()
+                # shoot
+                if key[pygame.K_SPACE] and time_now - self.last_shot > cooldown:
+                    if self.direction == 1:
+                                direction = 1
+                                bullet = Bullets(self.rect.x, self.rect.centery, direction)
+                                bullet_group.add(bullet)
+                                self.last_shot = time_now
+                    if self.direction == -1:
+                                direction = -1
+                                bullet = Bullets(self.rect.x, self.rect.centery, direction)
+                                bullet_group.add(bullet)
+                                self.last_shot = time_now
 
                 #handle animation
                 if self.counter > walk_cooldown:
@@ -335,6 +351,36 @@ class Player():
             self.jump = False
             self.direction = 0
             self.in_air = True
+            self.last_shot = pygame.time.get_ticks()
+
+#---------BULLETS------
+class Bullets(pygame.sprite.Sprite):
+    def __init__(self, x, y, direction ):
+        pygame.sprite.Sprite.__init__(self)
+        self.image = pygame.image.load("img/bullet.png")
+        self.rect = self.image.get_rect()
+        self.rect.center = [x, y]
+        self.direction = direction
+        self.vel = 13*direction
+
+    def update(self):
+        self.rect.x += self.vel
+        if self.rect.x > 1200:
+            self.kill()
+
+        #check for collision with blocks
+        for tile in world.tile_list:
+            #check for collision in x direction
+            if tile[1].colliderect(self.rect):
+                self.kill()
+
+
+        #check for collision with enemies
+        if pygame.sprite.spritecollide(self, glitch_group, True):
+            self.kill()
+
+
+
 
 #-----------------WORLD--------------------------
 class World():
@@ -349,35 +395,35 @@ class World():
         #Backgroud Music
         if level == 1:
             pygame.mixer.music.load('img/sound/BG_Denial.mp3')
-            pygame.mixer.music.play(1)
+            pygame.mixer.music.play(loops=-1)
             
         if level == 2:
             pygame.mixer.music.load('img/sound/BG_Anger.mp3')
-            pygame.mixer.music.play(1)
+            pygame.mixer.music.play(loops=-1)
             
         if level == 3:
             pygame.mixer.music.load('img/sound/BG_Bargaining.mp3')
-            pygame.mixer.music.play(1)
+            pygame.mixer.music.play(loops=-1)
             
         if level == 4:
             pygame.mixer.music.load('img/sound/BG_Depression.mp3')
-            pygame.mixer.music.play(1)
+            pygame.mixer.music.play(loops=-1)
         
         if level == 5:
             pygame.mixer.music.load('img/sound/BG_Acceptance.mp3')
-            pygame.mixer.music.play(1)
+            pygame.mixer.music.play(loops=-1)
             
         if level == 6:
             pygame.mixer.music.load('img/sound/BG_Denial.mp3')
-            pygame.mixer.music.play(1)
+            pygame.mixer.music.play(loops=-1)
             
         if level == 7:
             pygame.mixer.music.load('img/sound/BG_Anger.mp3')
-            pygame.mixer.music.play(1)
+            pygame.mixer.music.play(loops=-1)
         
         if level == 8:
             pygame.mixer.music.load('img/sound/BG_Bargaining.mp3')
-            pygame.mixer.music.play(1)
+            pygame.mixer.music.play(loops=-1)
             
         if level == 9:
             pygame.mixer.music.load('img/sound/BG_Depression.mp3')
@@ -620,6 +666,7 @@ class Platform(pygame.sprite.Sprite):
                 self.move_direction *= -1
                 self.move_counter *= -1
 
+
 # ---------------------------- MAP TILES ----------------------
 #Level 10 to so make sure kung mag eedit ka, kindly change this
 world_data = [
@@ -666,6 +713,7 @@ if level == 9:
 if level == 10:
     player = Player(50, height - 300 )
 
+bullet_group = pygame.sprite.Group()
 glitch_group = pygame.sprite.Group()
 lava_group = pygame.sprite.Group()
 spikes_group = pygame.sprite.Group()
@@ -861,6 +909,7 @@ while run:
                         fadetext(width, height)
                         draw_text("maybe i will not cry anymore....", font2, GRAY, (width // 2) - 180, height // 2 + 250)
                         fadetext(width, height)
+            bullet_group.update()
 
             glitch_group.draw(screen)
             lava_group.draw(screen)
@@ -868,6 +917,7 @@ while run:
             chip_group.draw(screen)
             exit_group.draw(screen)
             platform_group.draw(screen)
+            bullet_group.draw(screen)
 
             game_over = player.update(game_over)
 
