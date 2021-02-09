@@ -698,6 +698,7 @@ world_data = [
 ]
 
 
+
 # Player positions
 
 if level >= 0 and level <= 5:
