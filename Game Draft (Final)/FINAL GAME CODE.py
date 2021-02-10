@@ -843,7 +843,7 @@ while run:
                 #Collecting chip
                 if pygame.sprite.spritecollide(player, chip_group, True):
                     #ginawa ko muna tong zero para hindi mag print yung mga letters
-                    chip = 0
+                    chip += 1
                     # Yung mga "chips" na to is for the journals/papers (which is may story), kung ayaw mo ng may story, kindly delete this whole block
                     if chip == 1:
                         image = pygame.transform.scale(letter1_img, (width // 4, height - 200 ))
