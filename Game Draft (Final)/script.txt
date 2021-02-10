@@ -1,0 +1,106 @@
+script
+main menu
+start
+
+	(running and door slamming sound effect)
+
+	WHAT HAPPENED?!
+	NO! NO! NO! WAKEE UP!!!
+
+	image (suicide)
+
+level 0
+	text from the player = "What? what happened?
+	journal 1
+	they're just having a rought day.. i understand
+	text from the player = what is this? did i wrote this?
+	
+	proceed level
+	
+	journal 2
+	They love me right? of course... right?
+	
+	text from the player = huh?
+
+	journal 3
+	Why do i live?
+
+	finished intro
+
+	Denial is not only an attempt to pretend that the loss does not exist
+	We are also trying to absorb and understand what is happening
+
+	text for story
+	Please hang in there!
+	Someone HELP!!
+	
+	image ambulance
+	
+	
+level 1 Denial
+	text from the player = those voices, they're familiar
+	
+	journal 4
+	They're just upset... This will be over tommorrow..
+	text from the player = "Who's they? whos journals is this?
+
+	proceed the level
+
+	journal 5
+	They love me. They' ll never do such things.
+	tex from player = What's happenning? i can't remember anything
+
+	proceed the level
+
+	journal 6
+	i trusted you... why?
+	text from player = " I... feel.....it...... Why?"
+
+	Anger allows us to express emotion with less fear of judgment or rejection.
+
+	text for story
+	(cries)
+	
+	image hospital
+
+level 2 Anger
+	
+	journal 7
+	Having a bad friend is worse than not having one
+	text from player = I HATE ALL OF YOU
+	
+	proceed the level
+
+	journal 8
+	laughing image with laughing sound
+	text from player = stop laughing at me!
+
+	proceed the level
+	
+	journal 9 
+	Maybe... just maybe... if i became theri friend. They gonna stop....
+	text from player = m - maybe.....
+	
+	image alone
+
+	text from player = maybe i will not cry anymore....
+	
+	An individual will cling to the threads of hope, however thin and worn the fabric may be.
+	
+	text for story
+	Doc, the hearts stop beating...
+	start the cpr
+	NOW!
+	
+	hospital and beeping sound effects
+
+	image (giving up-hospital bed)
+	
+
+level 3 bargaining
+
+	
+	
+	
+
+
