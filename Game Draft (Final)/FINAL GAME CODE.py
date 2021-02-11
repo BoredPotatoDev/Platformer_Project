@@ -991,7 +991,7 @@ while run:
                     game_over = 0
                     #total_chip = chip
                 else:
-                    draw_tetx('YOU WIN!', font, GRAY, (width // 2) - 140, height // 2)
+                    draw_text('YOU WIN!', font, GRAY, (width // 2) - 140, height // 2)
                     if restart_button.draw():
                         level = 1
                         world_data = []
