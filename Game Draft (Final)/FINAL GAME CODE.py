@@ -17,7 +17,7 @@ width = 1300
 height = 650
 
 screen = pygame.display.set_mode((width, height))
-pygame.display.set_caption('Group 11')
+pygame.display.set_caption('nero')
 
 BLACK = (0, 0, 0)
 RED = (255, 0, 0)
